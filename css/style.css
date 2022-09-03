@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital,wght@0,400;0,600;1,300&display=swap');
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Source Serif Pro', serif;
+}
+
+.container {
+   width: 100%;
+   padding-left: 1.5rem;
+   padding-right: 1.5rem;
+}
+
+.main {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding: 2rem 0;
+}
+
+/* Right Section - Car Info */
+.text {
+   flex-basis: 100%;
+}
+
+.text h2 {
+   margin: 1.5rem 0;
+   color: #140b4a;
+}
+
+.statis {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin-bottom: 2rem;
+}
+
+.statis .box {
+   flex-basis: 30%;
+   padding: 1rem 0;
+   /* border: 1px solid #c6c5c5; */
+   box-shadow: 0 1px 4px -1px rgba(0, 0, 0, 0.166);
+   border-radius: 20px;
+   text-align: left;
+   padding-left: 10px;
+}
+
+.statis .box h5 {
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-size: 1rem;
+   font-weight: 500;
+   margin-bottom: 0.6rem;
+   color: rgb(89, 102, 107);
+}
+
+.statis .box span {
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   font-size: 1.5rem;
+   font-weight: 700;
+   color: #140b4a;
+}
+.statis .box p {
+   color: grey;
+}
+
+.info ul {
+   display: flex;
+   margin-bottom: 1.2rem;
+}
+
+.info ul li {
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   align-items: center;
+   list-style: none;
+   margin-right: 20px;
+}
+
+.info ul li .card {
+   display: flex;
+   padding: 1rem;
+   background-color: #e7e6e6;
+   border-radius: 10px;
+   margin-bottom: 7px;
+}
+
+.info ul li .card i {
+   color: #000;
+   font-size: 1.2rem;
+}
+
+.info ul li span {
+   font-size: 12px;
+   font-weight: 600;
+   text-transform: capitalize;
+   font-family: 'Source Serif Pro', serif;
+}
+
+/* Right Section -IMG */
+.img-box {
+   flex-basis: 100%;
+   height: 600px;
+}
+
+
+canvas {
+   width: 100% !important;
+}
+
+@media (min-width: 992px) {
+   .container {
+      padding-left: 4rem;
+      padding-right: 4rem;
+   }
+   .text {
+      flex-basis: 45%;
+   }
+
+   .img-box {
+      flex-basis: 50%;
+   }
+}
+
+@media (min-width: 1200px) {
+   .container {
+      max-width: 1140px;
+      width: 100%;
+      margin: auto;
+   }
+}
